@@ -1,3 +1,10 @@
+## Ethernaut Challenge
+**Ethernaut is a Web3/Solidity based wargame played in the Ethereum Virtual Machine. Each level is a smart contract that needs to be 'hacked'. To hack a level, you need to become the owner of the contract or cause the contract to emit a specific event.**
+
+*This repo, contains my solution and vital notes while working towards the challenge*
+
+
+<!-- Foundry Instalation -->
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
