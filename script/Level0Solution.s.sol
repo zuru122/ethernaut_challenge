@@ -6,7 +6,7 @@ import "forge-std/console.sol";
 import {Level0} from "../src/Level0.sol";
 
 contract Level0Solution is Script {
-    Level0 public level0 = Level0(0x8A8bC05AEd3b530Ae239D9AC8F11FFa77434D60c);
+    Level0 public level0 = Level0(0x3d8aA479A2E9730dBB99ADb539f36B9335FFffae);
 
     function setUp() public {}
 
