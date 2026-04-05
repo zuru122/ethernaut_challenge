@@ -21,6 +21,7 @@ contract Level1FallbackSolution is Script {
         console.log("The owner was", level1Fallback.owner());
 
         level1Fallback.contribute{value: 0.0001 ether}();
+        
         (bool ok,) = address(level1Fallback).call{value: 0.0001 ether}("");
         require(ok, "ETH send failed");
 
