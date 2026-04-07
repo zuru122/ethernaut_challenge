@@ -3,7 +3,7 @@
 
 *This repo, contains my solution and vital notes while working towards the challenge*
 
-forge script script/Level2Fallout.s.sol --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast -vvvv
+forge script script/Level{name}.s.sol --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast -vvvv
 
 
 <!-- Foundry Instalation -->

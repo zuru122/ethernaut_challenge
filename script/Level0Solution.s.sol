@@ -19,6 +19,5 @@ contract Level0Solution is Script {
         level0.authenticate(password);
 
         vm.stopBroadcast();
-      
     }
 }
